@@ -1,9 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Plainest Website</title>
+    <title>David Rangel Alarcon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/w3_cv_style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="src/index.js"></script>
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      button.link { background:none;border:none; }
+      a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+      }
+      /* Overwrite Blue */
+      .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2e80c1!important}
+      .w3-text-blue,.w3-hover-text-blue:hover{color:#2e80c1!important}
+    </style>
 </head>
-<body>
-Empty, Too!
+<body class="w3-light-grey">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+      <div class="w3-white w3-text-grey w3-card-4">
+        <!-- <div class="w3-display-container">
+          <img src="IMAGE.JPG" style="width:100%" alt="Avatar">
+        </div> -->
+        <div class="w3-container w3-text-black">
+          <h2>David Rangel Alarcon</h2>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Software Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>San Jose, CA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>drangelalarcon@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>14082212214</p>
+          <p><i class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large w3-text-blue"></i><a href="DavidRangel_Resume.pdf">Resume</a></p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-blue"></i>Programming Languages</b></p>
+          <p>Python, C#, Java, Prolog, Matlab, SQL, HTML, Javascript</p>
+
+          <p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-blue"></i>Software & Tools</b></p>
+          <p>Git, SVN, TFS, Docker, Visual Studio, Sublime, LaTeX, Linux, Microsoft Office</p>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
+          <p>English, Spanish</p>
+          <br>
+        </div>
+      </div><br>
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Performance Star | Software Engineer</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2019 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
+          <p>Worked on an intelligent recipe generator for chemical vapor deposition equipment. Recipes are command sequences generated from a user's intent; their desired process, tool, and yield goals.</p>
+          <ul id="pstar" style="display:none">
+             <li>Created an SQLite3 database and python/prolog interfaces for shared data.</li>
+             <li>Refactored and added test code for a flask web app back-end. The python3.7 back-end stored a state for a user, and generated an interactive pareto front for the user to select their desired yield goals.</li>
+             <li>Unified separate code bases into a single source repository with the same database and Flask application, to make the application shippable as a docker image.</li>
+             <li>Optimized and generalized a prolog search problem which synthesized the recipe order.</li>
+             <li>Developed a flask web app dev tool for visualizing and stepping through the prolog search problem.</li>
+          </ul> 
+          <button class="link" id="pstarbutton" style="display:block" onclick="toggle(pstar, pstarbutton)">
+            ... see more
+          </button>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Keysight Technologies | Electrical Engineer</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Sep 2017</h6>
+          <p>Developed calibrations and tests in C# for spectrum analyzers and signal generators; alc control, signal to noise, RF gain, spur searches, filter roll off, etc.</p>
+          <ul id="keys" style="display:none">
+            <li>Optimized signal generator performance by benchmark testing and analyzing data using Python and C#.</li>
+            <li>Saved days of engineering time by implementing a sharable spur search and classifier library for signal generators.</li>
+            <li>Designed and distributed troubleshooting backplane-extender board using internal PCB layout tool.</li>
+            <li>Reviewed prototypes and specified modifications to fix bugs stemming from hardware and software design.</li>
+            <li>Maximized throughput of our production process for products by identifying root causes and fixing them.</li>
+            <li>Improved module yield 40% by revising noise specifications to match production statistics.</li>
+            <li>Modified test stations to ensure required precision and accuracy required by our product specifications.</li>
+          </ul>
+          <button class="link" id="keysbutton" style="display:block" onclick="toggle(keys, keysbutton)">
+            ... see more
+          </button>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Gas Technology Institute | Intern</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2012 - Jun 2013</h6>
+          <ul id="gas" style="display:none">
+            <li>Computed product efficiencies from house energy data using excel linear regression tools.</li>
+            <li>Wrote technical reports for energy saving projects, following California Energy Commission standards.</li>
+          </ul>
+          <button class="link" id="gasbutton" style="display:block" onclick="toggle(gas, gasbutton)">
+            ... see more
+          </button>
+          <br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of California Los Angeles</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - Dec 2018</h6>
+          <p>Master's Degree in Computer Science, GPA: 3.74</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of California Davis</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2010 - Jun 2014</h6>
+          <p>Bachelor's Degree in Electrical Engineering</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Bayesian Inference on Medical ICP Data | UCLA</b></h5>
+          <ul id="bayes" style="display:none">
+            <li>Generated a methodology to find time versus accuracy trade-off of noisy alarm waiting periods.</li>
+            <li>Built a 5-fold cross-validation classifier pipeline for parameter testing discriminant analyzers in Matlab.</li>
+            <li>Modeled the time based decision using a hidden markov model, trained in Matlab with the BayesNet library.</li>
+          </ul> 
+          <button class="link" id="bayesbutton" style="display:block" onclick="toggle(bayes, bayesbutton)">
+            ... see more
+          </button>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Generating Adversarial Examples | UCLA</b></h5>
+          <ul id="adver" style="display:none">
+            <li>Presented a new adversarial attack that reduced a defending networks accuracy from 98.4% to 89.77%.</li>
+            <li>Conceptualized a derivative of gradient attack, ours perturbs the main component of the gradient vector.</li>
+            <li>Evaluated the attack in python using tensorflow and Goodfellow's attack libraries for baselines.</li>
+          </ul>
+          <button class="link" id="adverbutton" style="display:block" onclick="toggle(adver, adverbutton)">
+            ... see more
+          </button>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Natural Language Processing - Word2Poly | UCLA</b></h5>
+          <ul id="nlp" style="display:none">
+            <li>Investigated using multiple vectors per word with the standard implementation, did not outperform baseline.</li>
+            <li>Explored various test methods, evaluated with contextual word similarity and visualized embeddings with PCA.</li>
+            <li>Implemented Word2Poly in python with tensorflow and trained on 124M words from enWiki.</li>
+          </ul>
+          <button class="link" id="nlpbutton" style="display:block" onclick="toggle(nlp, nlpbutton)">
+            ... see more
+          </button>
+          <br>
+        </div>
+      </div>
+
+    <!-- End Right Co  <i class="fa fa-instagram w3-hover-opacity"></i>
+lumn -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue w3-center w3-margin-top">
+  <p>Find me online!</p>
+  <a href="https://github.com/drangelalarcon"><i class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/david-rangel-alarcon-2809908a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</footer>
+
 </body>
 </html>
