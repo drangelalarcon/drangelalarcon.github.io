@@ -9,7 +9,6 @@
  * Sunshine: F7B733;
  * Clean: DFDCE3;
 */
-
 * {
   font-family: 'Roboto Slab', serif;
 }
@@ -21,10 +20,10 @@ html, body {
 .left-bar-text {
   color: white;
   font-weight: bolder;
-
 }
 
 .page-wrap {
+  margin: 0;
   min-height: 100%;
   /* equal to site-footer height */
   padding-bottom: 40px; 
@@ -44,26 +43,46 @@ html, body {
   bottom: 0;
 }
 
-.row {
-  display: flex;
-  width: 100%;
-}
+@media only screen and (min-width: 600px) {
+  .row {
+    display: flex;
+    width: 100%;
+  }
 
-.left-bar-wrap {
-  margin-left: 0;
-  padding-bottom: 100%;
-  padding-right: 360px;
-  background-color: #4ABDAC;
-}
+  .left-bar-wrap {
+    padding-top: 1px;
+    padding-bottom: 100%;
+    padding-right: 360px;
+    background-color: #4ABDAC;
+  }
 
-.left-column {
-  width: 345px;
-  margin-left: 15px;
-  float:right;
-  position: fixed;
+  .left-column {
+    width: 345px;
+    padding-left: 15px;
+    float:right;
+    position: fixed;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    margin: 0;
+    width: 100%;
+  }
+
+  .left-bar-wrap {
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    background-color: #4ABDAC;
+  }
+
+  .left-column {
+    padding-left: 15px;
+  }
 }
 
 .right-column {
+  padding-top: 1px;
   float:none;
   width: auto;
   padding-right: 15px;
