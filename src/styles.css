@@ -1,0 +1,85 @@
+/* Color Scheme:
+ * Green: 007849
+ * Yellow: FFCE00
+ * Blue: 0375B4
+ * Black: 262228
+ *
+ * Fresh: 4ABDAC;
+ * Vermillion: FC4A1A;
+ * Sunshine: F7B733;
+ * Clean: DFDCE3;
+*/
+
+* {
+  font-family: 'Roboto Slab', serif;
+}
+html, body {
+  height:100%;
+  margin: 0;
+}
+
+.left-bar-text {
+  color: white;
+  font-weight: bolder;
+
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to site-footer height */
+  padding-bottom: 40px; 
+}
+.page-wrap:after {
+  content: "";
+  display:block;
+}
+
+.site-footer {
+  position: fixed;
+  background: #FC4A1A;
+  width: 100%;
+  text-align: center;
+  height:40px;
+  vertical-align: middle;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.left-bar-wrap {
+  margin-left: 0;
+  padding-bottom: 100%;
+  padding-right: 360px;
+  background-color: #4ABDAC;
+}
+
+.left-column {
+  width: 345px;
+  margin-left: 15px;
+  float:right;
+  position: fixed;
+}
+
+.right-column {
+  float:none;
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.details-button {
+  border-radius: 8px;
+  background-color: #F7B733;
+}
+
+.details-button:hover {
+  opacity: 0.6;
+}
+.clear-hover:hover {
+  opacity: 0.5;
+}
+
