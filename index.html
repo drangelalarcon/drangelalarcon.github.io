@@ -26,33 +26,48 @@
       </div>
 
       <div class="right-column">
+        <h2>Work Experience</h2>
         <div>
-          <h2>Work Experience</h2>
-          <h3>Performance Star | Software Engineer</h3>
-          <h4>Feb 2019 - Current</h4>
-          <p>Worked on an intelligent recipe generator for chemical vapor deposition equipment. Recipes are command sequences generated from a user's intent; their desired process, tool, and yield goals.</p>
-          <ul id="pstar" style="display:none">
-             <li>Created an SQLite3 database and python/prolog interfaces for shared data.</li>
-             <li>Refactored and added test code for a flask web app back-end. The python3.7 back-end stored a state for a user, and generated an interactive pareto front for the user to select their desired yield goals.</li>
-             <li>Unified separate code bases into a single source repository with the same database and Flask application, to make the application shippable as a docker image.</li>
-             <li>Optimized and generalized a prolog search problem which synthesized the recipe order.</li>
-             <li>Developed a flask web app dev tool for visualizing and stepping through the prolog search problem.</li>
+          <h3>OpsRamp Inc. | <i>Software Engineer</i></h3>
+          <h4>Dec 2019 - Apr 2020</h4>
+          <p>Worked with an Agile team on a machine learning module consisting of Python, Docker, MySQL, Kafka, etc.</p>
+
+          <ul id="ops" style="display:none">
+            <li>Developed, implemented, and tested a statistical algorithm using conditional probability that improves the output of an unsupervised Keras sequence classification model.</li>
+            <li>Sped up model training times by making more use of pandas and numpy libraries to vectorize key functions.</li>
+            <li>Improved the code base by adding unit testing, adding memory monitoring, fixing memory leaks, fixing input handling from both Kafka messages and API call returns, repairing MySQL scripts, and general code cleaning.</li>
           </ul> 
+          <button class="details-button" id="opsbutton" style="display:block" onclick="toggle(ops, opsbutton)">
+            expand
+          </button>
+        </div>
+        <div>
+          <h3>Performance Star | <i>Software Engineer</i></h3>
+          <h4>Feb 2019 - Dec 2019</h4>
+          <p>Worked on an intelligent recipe generator for chemical vapor deposition equipment. Recipes are command sequences generated from a user's desired process, tool, and yield goals.</p>
+
+          <ul id="pstar" style="display:none">
+            <li>Unified and refactored separate Python Flask code bases into a single application, making the application shareable as a docker image. The UI collects form inputs and inputs from a custom pareto front GUI and outputs a synthesized recipe.</li>
+            <li>Created an SQLite3 database and python/prolog interfaces for storing and accessing data.</li>
+            <li>Optimized and generalized a prolog search problem which synthesized the recipe order.</li>
+            <li>Developed a flask web app tool for visualizing and stepping through a prolog search problem.</li>
+          </ul>
           <button class="details-button" id="pstarbutton" style="display:block" onclick="toggle(pstar, pstarbutton)">
             expand
           </button>
         </div>
         <div>
-          <h3><b>Keysight Technologies | Electrical Engineer</b></h3>
+          <h3>Keysight Technologies | <i>Electrical Engineer</i></h3>
           <h4>Jul 2014 - Sep 2017</h4>
-          <p>Developed calibrations and tests in C# for spectrum analyzers and signal generators; alc control, signal to noise, RF gain, spur searches, filter roll off, etc.</p>
+          <p>Developed calibrations and tests in C\# for spectrum analyzers and signal generators; alc control, signal to noise, RF gain, spur searches, filter roll off, etc.</p>
+
           <ul id="keys" style="display:none">
-            <li>Optimized signal generator performance by benchmark testing and analyzing data using Python and C#.</li>
-            <li>Saved days of engineering time by implementing a sharable spur search and classifier library for signal generators.</li>
+            <li>Optimized signal generator performance by benchmark testing and analyzing data using Python and C\#.</li>
+            <li>Saved days of engineering time by implementing a shareable spur search and classifier library for signal generators.</li>
             <li>Designed and distributed troubleshooting backplane-extender board using internal PCB layout tool.</li>
             <li>Reviewed prototypes and specified modifications to fix bugs stemming from hardware and software design.</li>
             <li>Maximized throughput of our production process for products by identifying root causes and fixing them.</li>
-            <li>Improved module yield 40% by revising noise specifications to match production statistics.</li>
+            <li>Improved hardware yields by 40\% by revising noise specifications to match production statistics.</li>
             <li>Modified test stations to ensure required precision and accuracy required by our product specifications.</li>
           </ul>
           <button class="details-button" id="keysbutton" style="display:block" onclick="toggle(keys, keysbutton)">
@@ -60,7 +75,7 @@
           </button>
         </div>
         <div>
-          <h3><b>Gas Technology Institute | Intern</b></h3>
+          <h3>Gas Technology Institute | <i>Intern</i></h3>
           <h4>Sep 2012 - Jun 2013</h4>
           <ul id="gas" style="display:none">
             <li>Computed product efficiencies from house energy data using excel linear regression tools.</li>
