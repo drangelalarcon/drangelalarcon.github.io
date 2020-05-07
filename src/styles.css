@@ -10,15 +10,17 @@
  * Clean: DFDCE3;
 */
 * {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Helvetica', serif;
 }
 html, body {
   height:100%;
   margin: 0;
 }
+body {
+  color: whitesmoke;
+}
 
 .left-bar-text {
-  color: white;
   font-weight: bolder;
 }
 
@@ -35,15 +37,22 @@ html, body {
 
 .site-footer {
   position: fixed;
-  background: #FC4A1A;
+  background: #404040;
   width: 100%;
+  padding:5px;
   text-align: center;
-  height:40px;
+  height:30px;
   vertical-align: middle;
   bottom: 0;
 }
 
-@media only screen and (min-width: 600px) {
+.profile-pic {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 700px) {
   .row {
     display: flex;
     width: 100%;
@@ -53,17 +62,17 @@ html, body {
     padding-top: 1px;
     padding-bottom: 100%;
     padding-right: 360px;
-    background-color: #4ABDAC;
+    background-color: #216c8b;
   }
 
   .left-column {
-    width: 345px;
-    padding-left: 15px;
+    width: 330px;
+    padding: 15px;
     float:right;
     position: fixed;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .row {
     margin: 0;
     width: 100%;
@@ -71,32 +80,34 @@ html, body {
 
   .left-bar-wrap {
     margin: 0;
-    padding-top: 1px;
-    padding-bottom: 20px;
-    background-color: #4ABDAC;
+    width: 100%;
+    padding: 15px;
+    background-color: #216c8b;
   }
 
   .left-column {
-    padding-left: 15px;
+    padding: 15px;
   }
 }
 
 .right-column {
-  padding-top: 1px;
   float:none;
-  width: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100%;
+  padding: 15px;
   text-align: left;
+  background-color: #3f99d5;
 }
 
 .details-button {
   border-radius: 8px;
-  background-color: #F7B733;
+  background-color: #404040;
+  border: 2px solid;
+  border-color: #d7c245;
+  color: whitesmoke;
 }
 
 .details-button:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .clear-hover:hover {
   opacity: 0.5;

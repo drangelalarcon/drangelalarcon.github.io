@@ -1,11 +1,11 @@
 function toggle(element, button) {
     if (element.style.display == 'none') {
         unfade(element);
-        button.innerHTML = "... hide"
+        button.innerHTML = "hide"
     }
     else {
         fade(element);
-        button.innerHTML = "... see more"
+        button.innerHTML = "expand"
     }
 }
 
