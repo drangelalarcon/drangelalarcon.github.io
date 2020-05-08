@@ -71,6 +71,14 @@ body {
     float:right;
     position: fixed;
   }
+
+  .right-column {
+    float:none;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #3f99d5;
+  }
 }
 @media only screen and (max-width: 700px) {
   .row {
@@ -88,15 +96,17 @@ body {
   .left-column {
     padding: 15px;
   }
+
+  .right-column {
+    float:none;
+    width: 100%-30px;
+    padding: 15px;
+    text-align: left;
+    background-color: #3f99d5;
+  }
 }
 
-.right-column {
-  float:none;
-  width: 100%-30px;
-  padding: 15px;
-  text-align: left;
-  background-color: #3f99d5;
-}
+  
 
 .details-button {
   border-radius: 8px;
